@@ -1,0 +1,237 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans)
+@import url(//fonts.googleapis.com/css?family=Fugaz+One)
+@import url(//fonts.googleapis.com/css?family=Anton)
+@import url(//fonts.googleapis.com/css?family=Acme|Archivo+Black)
+@import url(//fonts.googleapis.com/css?family=Zilla+Slab+Highlight)
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px')
+@import url('https://fonts.googleapis.com/css?family=Russo+One')
+
+
+$button-color: rgba(40, 148, 230, 0.6)
+$button-selected: rgba(40, 148, 230, 1)
+$background-white: rgba(255, 255, 255, 1)
+$color-white: rgba(255, 255, 255, 1)
+$color-nice-blue: rgba(0, 158, 216, 1)
+$color-nice-blue-darker: rgba(0, 67, 92, 1)
+$color-nice-red: rgba(255, 67, 67, 1)
+$color-nice-green: rgba(0, 204, 106, 1)
+$color-nice-yellow: rgba(255, 185, 0, 1)
+
+body
+  margin: 0 100px 10% 100px
+  // background-image: repeating-linear-gradient(45deg, gray, lightgray 20px, #226666 20px, #226666 40px)
+  // animation: bg 15s linear infinite
+  background-image: radial-gradient(90deg, #64f38c, #3a6073)
+
+.navigation-section
+  width: auto
+  height: auto
+  background-color: inherit
+  .carrots
+    fill: $button-selected
+    display: flex
+    flex-direction: row
+    outline: none
+    padding: 20px 0px
+    border-radius: 5px
+    display: flex
+    justify-content: space-between
+    width: auto
+    button:nth-child(1)
+      background-color: $color-nice-blue
+      &:hover
+        filter: contrast(65%)
+    button:nth-child(2)
+      background-color: $color-nice-red
+      &:hover
+        filter: contrast(65%)
+    button:nth-child(3)
+      background-color: $color-nice-green
+      &:hover
+        filter: contrast(65%)
+    button:nth-child(4)
+      background-color: $color-nice-yellow
+      &:hover
+        filter: contrast(65%)
+    button
+      &:hover
+        cursor: pointer
+      font-family: 'Fugaz One', cursive
+      color: $color-white
+      text-align: center
+      border-radius: 10px
+      border-color: inherit
+      height: 50px
+      border: 0px
+      width: 100%
+      margin: 0 1vw
+
+.hero-header
+  background-image: url('../images/12315-NOCGEH.jpg')
+  width: auto
+  height: 30vw
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  color: white
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  font-family: 'Zilla Slab Highlight', cursive
+  // text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+  h1, h2, p
+    margin: 0px
+    font-size: 3vw
+    color: black
+    font-weight: 100
+  img
+    position: relative
+    left: 45%
+    width: 10vw
+    height: auto
+    border-radius: 100%
+    border: 1px black solid
+
+.social
+  display: flex
+  flex-direction: row
+  justify-content: center
+  font-family: 'Anton', sans-serif
+
+.social-div
+  display: flex
+  width: 100px
+  justify-content: center
+  img
+    margin-top: 10px
+    display: flex
+    height: 25px
+    width: 25px
+    border-radius: 5px
+  &:nth-child(1)
+    p
+      font-size: 0.9rem
+      margin: 0
+      margin-top: 15px
+      position: absolute
+      left: 5px
+      color: black
+  &:nth-child(2)
+    img
+      background-image: linear-gradient(45deg, purple, red, yellow)
+  &:nth-child(3)
+    img
+      background-image: linear-gradient(45deg, #3b5998, #8b9dc3, #3b5998)
+  &:nth-child(4)
+    img
+      background-image: linear-gradient(45deg, white, #0077B5)
+  &:nth-child(5)
+    img
+      background-color: #ff0000
+
+.work-section
+  display: flex
+  justify-content: center
+  font-family: 'Slabo 27px', serif
+  margin-top: 20px
+  h2
+    font-size: 2em
+    font-family: 'Russo One', sans-serif
+    color: $color-nice-blue
+  &:hover
+    background-color: hsla(225, 100%, 93%, 1)
+    h2
+      color: white
+
+.about-section
+  display: flex
+  justify-content: center
+  flex-direction: column
+  font-family: 'Slabo 27px', serif
+  margin-top: 20px
+  h2
+    font-size: 2em
+    font-family: 'Russo One', sans-serif
+    color: $color-nice-red
+  &:hover
+    background-color: hsla(225, 100%, 93%, 1)
+    h2
+      color: white
+
+.clients-section
+  display: flex
+  justify-content: center
+  flex-direction: column
+  font-family: 'Slabo 27px', serif
+  margin-top: 20px
+  &:hover
+    background-color: hsla(225, 100%, 93%, 1)
+    h2
+      color: white
+  p
+    margin: 0
+    margin-left: 10px
+    margin-right: 10px
+    width: auto
+    height: auto
+    font-size: 1.2em
+  h2
+    font-size: 2em
+    font-family: 'Russo One', sans-serif
+    color: $color-nice-green
+  img
+    height: 80px
+    width: auto
+    border-radius: 20px
+    transition: all .2s ease-in-out
+    border: 1px black solid
+    &:hover
+      transform: scale(3)
+      border-radius: 0
+      border: 1px black solid
+  .outer-div
+    display: flex
+    flex-direction: row
+    margin: 0 20px 20px 20px
+
+.content-section
+  display: flex
+  justify-content: center
+  font-family: 'Slabo 27px', serif
+  margin-top: 20px
+  h2
+    font-family: 'Russo One', sans-serif
+    font-size: 2em
+    color: $color-nice-yellow
+  &:hover
+    background-color: hsla(225, 100%, 93%, 1)
+    h2
+      color: white
+
+.footer
+  position: fixed
+  left: 0
+  bottom: 0
+  width: 100%
+  background-image: linear-gradient(45deg, #606c88, #3f4c6b)
+  color: white
+  align-items: center
+  height: 40px
+  border-top: 0.2px gray solid
+
+
+section
+  background-color: white
+  margin-right: 30px
+  margin-top: 5px
+  margin-bottom: 5px
+  border-radius: 5px
+
+h2.headertekst
+  text-align: center
+
+.clients-section
+  div:last-of-type
+    margin-bottom: 20px
