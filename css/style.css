@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Slabo+27px");
 @import url("https://fonts.googleapis.com/css?family=Russo+One");
 body {
-  margin: 10% 100px 10% 100px;
+  margin: 100px 10% 100px;
   background-image: -webkit-radial-gradient(left, #64f38c, #3a6073);
   background-image: -o-radial-gradient(left, #64f38c, #3a6073);
   background-image: radial-gradient(90deg, #64f38c, #3a6073); }
