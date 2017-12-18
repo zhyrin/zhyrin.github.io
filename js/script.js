@@ -81,26 +81,6 @@
   //   });
 //
 (function ($) {
-  $('#slideshow > div:gt(0)').hide();
-
-  //use prev() instead of next()
-  $('.arrow-icon1 img').on('click', function (event) {
-    $('#slideshow > div:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('#slideshow');
-  });
-
-  $('.arrow-icon2 img').on('click', function (event) {
-    $('#slideshow > div:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('#slideshow');
-  });
 
 })(jQuery);
 
